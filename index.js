@@ -50,7 +50,6 @@ app.get('/test', function(req, res) {
 var port = process.env.PORT || 1337;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, function() {
-  console.log('Client Class Creation Disabled: ', process.env.CLIENT_CLASS_CREATION === false);
   console.log('parse-server-example running on port ' + port + '.');
 });
 
